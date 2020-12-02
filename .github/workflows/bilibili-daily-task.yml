@@ -44,6 +44,10 @@ jobs:
     # 构建应用
     - name: Build APP
       run: dotnet build --configuration Release --no-restore
+
+    # 微信推送
+    - name: PUSHSCKEY
+      run: -pushScKey=SCU131885T3911cd7f14e9e2f8268023314c76ca895fc6f1708f897
        
     # 运行
     - name: Run APP
